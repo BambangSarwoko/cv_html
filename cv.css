@@ -1,0 +1,82 @@
+body {
+    background: brown;
+}
+.wrapper {
+    display: grid;
+    grid-template-columns: repeat(6, 1fr);
+    grid-gap: 10px;
+    grid-template-areas: 
+      "ph  hd  hd  hd hd hd"
+      "ph  hd  hd  hd hd hd"
+      "nav cnt cnt cnt cnt cnt"
+      "nav cnt cnt cnt cnt cnt"
+      "nav cnt cnt cnt cnt cnt"
+      "nav cnt cnt cnt cnt cnt"
+      "nav cnt cnt cnt cnt cnt"
+      "nav cnt cnt cnt cnt cnt";
+}
+
+.header {
+    grid-area: hd;
+    height:87px;
+    text-align: center;
+    font-size: 37px;
+    padding:20px;
+    font-family: 'Saira Extra Condensed', serif;
+}
+header aside {
+  font-size: 55px;
+  font-weight: bold;
+}
+header span {
+  font-style: italic;
+  font-weight: 700;
+}
+img {
+  width:160px;
+  height:100px;
+}    
+.photo {
+    grid-area: ph;
+    height:150px;
+    left:50px;
+    position: fixed; top:50px;
+}
+.content {
+    grid-area: cnt;
+    height: 3000px;
+    margin-right: 50px;
+    margin-top: 15px;
+    margin-left:-40px;
+}
+.nav {
+    margin-top: 10px;
+    margin-left:40px;
+    padding-top: 70px;
+    grid-area: nav;
+    height: 540px;
+    background-color: rgb(221, 170, 170);
+    font-family: 'Saira Extra Condensed', serif;
+    font-size: 19px;
+    position: fixed; top: 170px;
+    width: 170px;
+    font-weight: bold;
+}
+nav li {
+    margin:10px;
+    list-style-type: none
+    }
+fieldset { 
+           background-color: rgb(221, 170, 170);
+           font-family: 'Saira Extra Condensed', serif;
+          font-size: 20px;
+          border:none
+}
+fieldset:hover {
+        transition: 3s;   
+        transform: perspective(700px)
+                   translateZ(100px);
+       }
+legend {
+          font-size: 30px
+ }
